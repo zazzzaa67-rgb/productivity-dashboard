@@ -92,9 +92,9 @@ addButtongym.addEventListener("click" , function(){
         <div class="workout-card">
             <h3>${day}</h3>
             <img class="card-photo" src="photos/gym.jpg">
-            <b>${ex}</b>
-            <b>${w}</b>
-            <b>${sets}</b>
+            <b>Name of exercise : ${ex}</b>
+            <b>the weight : ${w}</b>
+            <b>The amount of sets : ${sets}</b>
             <b>${det}</b>
         </div>`;
     }
