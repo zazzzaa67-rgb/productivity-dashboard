@@ -1,7 +1,30 @@
 
 const addButtons = document.querySelectorAll(".add");
 const deleteButtons = document.querySelectorAll(".delete");
+document.addEventListener("DOMContentLoaded", function () {
 
+    let toggle = document.getElementById("toggleBtn");
+    let circle = document.querySelector(".circle");
+
+    let isDark = false;
+
+    toggle.addEventListener("click", function () {
+        isDark = !isDark;
+
+        if (isDark) {
+            circle.style.transform = "translateX(30px)";
+            circle.innerHTML = "🌙";
+            toggle.style.backgroundColor = "#2c3e50";
+            document.body.style.background = "#222";
+        } else {
+            circle.style.transform = "translateX(0)";
+            circle.innerHTML = "☀️";
+            toggle.style.backgroundColor = "#4db6e2";
+            document.body.style.background = "linear-gradient(#caf0f8 , #0096c7)";
+        }
+    });
+
+});
 addButtons.forEach(function(btn) {
     let card = btn.closest(".card");
 
