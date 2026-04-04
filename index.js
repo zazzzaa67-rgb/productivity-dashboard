@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
             circle.innerHTML = "☀️";
             toggle.style.backgroundColor = "#4db6e2";
             document.body.style.background = "linear-gradient(#caf0f8 , #0096c7)";
+            document.body.style.color = "black"
         }
     });
 
