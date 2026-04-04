@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             circle.innerHTML = "🌙";
             toggle.style.backgroundColor = "#2c3e50";
             document.body.style.background = "#222";
+            document.body.style.color = "white"
         } else {
             circle.style.transform = "translateX(0)";
             circle.innerHTML = "☀️";
