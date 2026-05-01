@@ -40,7 +40,6 @@ addButtons.forEach(function(btn) {
             <button class="done">✓</button>
             <input class="usTask" type="text" placeholder="Enter the task">
         `;
-
         TheTasks.appendChild(div);
         saveAll();
     });
